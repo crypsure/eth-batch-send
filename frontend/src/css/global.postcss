@@ -1,0 +1,96 @@
+$main-dark: #2e2e30;
+$main-blue: #1476f1;
+
+$bg-light: #f9f9f9;
+$bg-dark: rgb(26, 26, 26);
+$bg-grey: #838d8f;
+
+$orange: #f9a55d;
+$blue: #5db1f9;
+$red: #f46a6a;
+$green: #0ceabf;
+$primary: $orange;
+$secondary: $blue;
+
+$text-dark: #3c3d41;
+$text-dark2: #3a3d3f;
+$text-dark3: #4d4e53;
+$text-med: #908e8e;
+$text-med2: #b2b2b2;
+
+$border-med: #d8d8d8;
+
+$font-title: CrypsureText, sans-serif;
+$font-text: CrypsureText, sans-serif;
+
+@define-mixin title-bold {
+  font-family: $font-title;
+  font-weight: 700;
+}
+
+@define-mixin title-semibold $size {
+  font-family: $font-title;
+  font-weight: 600;
+  font-size: $size;
+}
+
+@define-mixin title-regular $size {
+  font-family: $font-title;
+  font-weight: 400;
+  font-size: $size;
+}
+
+@define-mixin text-regular $size {
+  font-family: $font-text;
+  font-weight: 400;
+  font-size: $size;
+}
+
+@define-mixin text-italic $size {
+  font-family: $font-text;
+  font-weight: 400;
+  font-style: italic;
+  font-size: $size;
+}
+
+@define-mixin text-medium $size {
+  font-family: $font-text;
+  font-weight: 500;
+  font-size: $size;
+}
+
+@define-mixin title $size {
+  @mixin title-bold;
+  font-size: $size;
+}
+
+@define-mixin title2 $size {
+  @mixin title-semibold;
+  font-size: $size;
+}
+
+@define-mixin flex-center {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+@define-mixin flex-center-col {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@define-mixin select {
+  @mixin title-regular 14px;
+  @mixin flex-center;
+  border-radius: 4px;
+  background-color: #eee;
+  box-shadow: inset 0 1px #d5d5d5;
+  color: #3c3d41;
+  padding: 8px 10px;
+  min-width: 48px;
+  position: relative;
+}

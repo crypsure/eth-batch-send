@@ -1,0 +1,25 @@
+{
+  "name": "eth-batch-send",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/crypsure/eth-batch-send.git"
+  },
+  "keywords": [],
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/crypsure/eth-batch-send/issues"
+  },
+  "homepage": "https://github.com/crypsure/eth-batch-send#Readme.md",
+  "author": "Crypsure",
+  "scripts": {
+    "format": "prettier -w \"{**/*,*}.{ts,js,json}\"",
+    "format:check": "prettier --check \"{**/*,*}.{ts,js,json,vue}\""
+  },
+  "devDependencies": {
+    "oxlint": "^0.9.10",
+    "postcss-html": "^1.7.0",
+    "prettier": "^3.3.3",
+    "stylelint": "^16.10.0",
+    "stylelint-config-recommended-vue": "^1.5.0"
+  }
+}
